@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.content {
+
+}
+.containerH {
+    justify-content: center;
+    text-align:center;
+    background-color: burlywood;
+}
+.counter {
+    
+}
+.containerDoors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:deepskyblue;
+}
+
+.door {
+
+}
+.containerF {
+    display: flex;
+    background-color:beige;
+    justify-content: space-around;
+}
+.leftCollumn {
+    justify-content: center;
+    text-align: center;
+}
+.rightCollumn {
+    justify-content: center;
+    text-align: center;
+}
+.count {
+
+}
+.successfullCount {
+
+}
+.unsuccessfullCount {
+
+}
+
