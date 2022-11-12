@@ -1,52 +1,92 @@
 body{
     margin: 0;
     padding: 0;
+   font-size: 150%;
+   
 }
 p{
+    margin: 0;
+    padding: 0;
+}
+h1{
     margin: 0;
     padding: 0;
 }
 .content {
 
 }
+.wrap{
+
+}
 .containerH {
     justify-content: center;
     text-align:center;
     background-color: burlywood;
+   
+    height: 20vh;
+    display: flex;
+    min-height: 150px;
 }
 .counter {
-    
+    display: flex;
+   
+    justify-content: center;
+    text-align: center;
+   
 }
 .containerDoors {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color:deepskyblue;
+    min-width: 800px;
+    height: 50vh;
+    min-height: 400px;
 }
-
+.textDoor{
+    
+    margin: 110px;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    
+}
 .door {
+    
+    width: 250px;
+    height: 250px;
+    
+    background-color: rgb(0, 0, 0);
 
+    justify-content: center;
+    text-align: center;
+   
 }
+
 .containerF {
     display: flex;
     background-color:beige;
     justify-content: space-around;
+    height: 30vh;
 }
 .leftCollumn {
     justify-content: center;
     text-align: center;
+   
 }
 .rightCollumn {
     justify-content: center;
     text-align: center;
 }
 .count {
-
+    background-color: #fff;
 }
 .successfullCount {
-
+    color: rgb(162, 234, 55);
+    background-color: green;
 }
 .unsuccessfullCount {
-
+    color:red;
+    background-color: rgb(215, 146, 146);
 }
 

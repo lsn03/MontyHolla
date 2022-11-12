@@ -9,17 +9,36 @@
   
 </head>
 <body>
+    <script src="js/1.js"></script>
     <div class="content">
 
         <div class="containerH">
-            <div class="counter">
-                <p id="commonCounter">0</p>
+            <div class="wrap">
+                <div class="header">
+                    <p><h1>Парадокс Монти Холла</h1> </p>
+                </div>
+                <div class="counter">
+                    <p ><h2 id="commonCounter">Количество попыток: 0</h2> </p>
+                </div>
             </div>
+            
         </div>
         <div class="containerDoors">
-            <div id="door1" class="door">Door1</div>
-            <div id="door2" class="door">Door2</div>
-            <div id="door3" class="door">Door3</div>
+            <div id="door1" class="door" onclick="chooseDoor(1)">
+               <div class="text">
+                    <p id="textDoor1" class="textDoor"></p>
+               </div>
+            </div>
+            <div id="door2" class="door" onclick="chooseDoor(2)">
+               <div class="text">
+                    <p id="textDoor2" class="textDoor"></p>
+               </div>
+            </div>
+            <div id="door3" class="door" onclick="chooseDoor(3)">
+                <div class="text">
+                    <p id="textDoor3" class="textDoor"></p>
+               </div>
+            </div>
         </div>
         <div class="containerF">
             <div class="leftCollumn">
@@ -32,10 +51,10 @@
                 <p>Дверь не менялась</p>
                 <p id="rightCount" class="count">0</p>
                 <p id="rightSuccessful" class="successfullCount">0</p>
-                <p id="rightUnuccessful"class="unsuccessfullCount">0</p>
+                <p id="rightUnsuccessful"class="unsuccessfullCount">0</p>
             </div>
         </div>
     </div>
-    <script src="js/1.js"></script>
+    
 </body>
 </html>
