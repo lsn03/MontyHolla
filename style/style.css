@@ -69,10 +69,14 @@ h1{
     justify-content: space-around;
     height: 30vh;
 }
+.description{
+    text-align: left;
+    margin-right: 1vh;
+}
 .leftCollumn {
     justify-content: center;
     text-align: center;
-   
+    display: flex;
 }
 .rightCollumn {
     justify-content: center;

@@ -8,6 +8,7 @@ let successfulChanged = 0;
 let successfulNotChanged = 0
 let unSuccessfulNotChanged = 0,unSuccessfulChanged= 0;
 let commonChanged = 0, commonNotChanged = 0;
+
 function setWinDoor(){
     doorWin = Math.floor(Math.random() * (3 - 1 + 1) ) + 1;
     console.log('winDoor = '+doorWin);
@@ -28,22 +29,9 @@ function chooseAnotherDoor(door){
         return newDoor;
     }
 }
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
-  
 
-
-function chooseDoor(doorNumber){
-    
-    
-   
-   
-   if(blocked == doorNumber) return;
+function chooseDoor(doorNumber){   
+    if(blocked == doorNumber) return;
     if(doorNumber == doorWin)
     {
         cnt++;
@@ -53,9 +41,9 @@ function chooseDoor(doorNumber){
             commonCnt++;
             let d = document.getElementById("door" + (doorWin.toString()));
             d.style.backgroundColor = "green";
-            
+            blocked = doorNumber;
             document.getElementById("commonCounter").innerHTML = 'Количество попыток: '+(commonCnt.toString());
-            setTimeout(setWinDoor, 2 * 1000);
+            setTimeout(setWinDoor,  1000);
             if ( doorPrevious != doorNumber){
                 successfulChanged++;
             }else{
@@ -92,6 +80,7 @@ function chooseDoor(doorNumber){
             doorPrevious = doorNumber;
         }else{
             commonCnt++;
+            blocked = doorNumber;
             if(wrongDoor==doorNumber){
                 document.getElementById("door"+(doorWin.toString())).style.backgroundColor="red";
             }
@@ -99,7 +88,7 @@ function chooseDoor(doorNumber){
             let d = document.getElementById("door"+(doorWin.toString()));
             d.style.backgroundColor = "green";
             
-            setTimeout(setWinDoor, 2 * 1000);
+            setTimeout(setWinDoor,  1000);
             if ( doorPrevious != doorNumber){
                 unSuccessfulChanged++;
             }else{
